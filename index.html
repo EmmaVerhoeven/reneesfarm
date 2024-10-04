@@ -46,29 +46,31 @@
             color: orangered;
         }
 
-        /* Desktop styles (screens larger than 768px) */
-        @media (min-width: 769px) {
-            .bio {
-                margin-left: 20px;
-                margin-right: auto;
-            }
-        }
-
         /* Mobile-specific styles (screens smaller than 768px) */
         @media (max-width: 768px) {
+            body {
+                padding: 0;
+            }
+
             .bio {
                 max-width: 100%;
-                margin: 10px;
+                margin: 0;
                 padding: 10px;
             }
 
             h1 {
-                font-size: 2.5em;
+                font-size: 2em;
             }
 
             p,
             a {
-                font-size: 1.2em;
+                font-size: 1.4em;
+                /* Increased font size for better readability */
+            }
+
+            .plaatje {
+                width: 100%;
+                /* Image fills the entire screen width */
             }
         }
     </style>
@@ -90,4 +92,13 @@
         <p>🐓 <a style="color:rgb(0, 165, 254)" href="instagram.com/reneesfarm">follow Renée's Farm on Instagram</a>
         </p>
 
-        <p><a class="reserve" href="https://forms.gle/7akpGeGbuyStZ8pLA" target="_blank">Reserve here</a>
+        <p><a class="reserve" href="https://forms.gle/7akpGeGbuyStZ8pLA" target="_blank">Reserve here</a> for Renée's
+            first
+            Regenerative
+            Dinner <br>at
+            <a href="https://extrapractice.space" target="_blank">Extra Practice</a> in Rotterdam!
+        </p>
+    </div>
+</body>
+
+</html>
