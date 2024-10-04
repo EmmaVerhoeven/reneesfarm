@@ -6,29 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renée's Farm</title>
     <style>
+        /* General styles for both desktop and mobile */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
         .bio {
             max-width: 500px;
             margin: 20px;
+            padding: 10px;
         }
 
         p {
-            font-family: Arial narrow;
+            font-family: Arial Narrow, sans-serif;
         }
 
         a {
             font-weight: bold;
-
             color: forestgreen;
+            text-decoration: none;
         }
 
         h1 {
             font-size: 3em;
-
-
+            margin: 0;
         }
 
         .plaatje {
             max-width: 100%;
+            display: block;
+            margin: 0 auto;
         }
 
         .reserve {
@@ -36,17 +45,40 @@
             font-weight: bold;
             color: orangered;
         }
+
+        /* Desktop styles (screens larger than 768px) */
+        @media (min-width: 769px) {
+            .bio {
+                margin-left: 20px;
+                margin-right: auto;
+            }
+        }
+
+        /* Mobile-specific styles (screens smaller than 768px) */
+        @media (max-width: 768px) {
+            .bio {
+                max-width: 100%;
+                margin: 10px;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p,
+            a {
+                font-size: 1.2em;
+            }
+        }
     </style>
 
 </head>
 
 <body>
     <div class="bio">
-
-
         <h1>Renée's Farm</h1>
-        <img class="plaatje" src="img/farmdreams.png" alt="">
-
+        <img class="plaatje" src="img/farmdreams.png" alt="Image of Renée's farm">
 
         <p>Renée Verhoeven is an agro-ecologist and regenerative chef based in Rotterdam. She holds an MA from
             Wageningen University in Resilient Food and Farming Systems, and recently launched her catering business
@@ -55,22 +87,7 @@
             farmstead one
             day where these passions for cooking, organic farming and biodiversity can come together.</p>
 
-
         <p>🐓 <a style="color:rgb(0, 165, 254)" href="instagram.com/reneesfarm">follow Renée's Farm on Instagram</a>
         </p>
 
-        <p><a class=reserve href="https://forms.gle/7akpGeGbuyStZ8pLA" target="_blank">Reserve here</a> for Renée's
-            first
-            Regenerative
-            Dinner <br>at
-            <a href="https://extrapractice.space" target="_blank">Extra Practice</a> in Rotterdam!</a>
-        </p>
-
-
-
-
-    </div>
-
-</body>
-
-</html>
+        <p><a class="reserve" href="https://forms.gle/7akpGeGbuyStZ8pLA" target="_blank">Reserve here</a>
